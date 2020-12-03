@@ -36,4 +36,4 @@
 ### Testing Application
 * curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'
 
-test 100,200
+test 100,200,300
