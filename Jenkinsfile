@@ -46,7 +46,7 @@ pipeline {
         stage('Test') {
            steps {
                 echo '...echo de test'
-			    sleep 10
+			    sleep 20
 				bat 'curl http://localhost:8081/rest/mscovid/estadoMundial'
 		    }
         }        
