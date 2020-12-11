@@ -6,7 +6,7 @@ pipeline {
             steps {
                 dir('C:\\Users\\ayanez3\\Desktop\\github\\ejemplo-maven'){
                    echo 'compile'
-                   sh './mvnw.cmd clean compile -e'
+                   bat './mvnw.cmd clean compile -e'
                 }
             }
         }
@@ -14,7 +14,7 @@ pipeline {
             steps {
                 dir('C:\\Users\\ayanez3\\Desktop\\github\\ejemplo-maven'){
                     echo 'unit'
-                    sh './mvnw.cmd clean test -e'
+                    bat './mvnw.cmd clean test -e'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 dir('C:\\Users\\ayanez3\\Desktop\\github\\ejemplo-maven'){
                     echo 'jar'
-                    sh './mvnw.cmd clean package -e'
+                    bat './mvnw.cmd clean package -e'
                 }
             }
         }
